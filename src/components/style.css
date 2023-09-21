@@ -1,0 +1,121 @@
+.input {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.input_box {
+  width: 100%;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  border-radius: 50px;
+  transition: 0.2s;
+  box-shadow: inset 0px 0px 5px black;
+  outline: none;
+}
+.btn_box {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 0;
+  margin: 12px;
+  background: #2f74c0;
+  font-size: 15px;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+  border: none;
+  color: white;
+}
+.btn_box:hover {
+  background: #388ae2;
+}
+.btn_box:active {
+  box-shadow: 0 0 5px black;
+  transform: scale(0.8);
+}
+.todo_list_container {
+  padding: 20px 0;
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.todoActive {
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #2f74c0;
+  text-align: center;
+}
+.todoActiveText {
+  font-size: 30px;
+}
+
+.dragActive {
+  background-color: #073a6f;
+}
+
+.todoComplete {
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: aqua;
+  text-align: center;
+}
+.todoCompleteText {
+  font-size: 30px;
+}
+
+.dragRemove {
+  background-color: #0f6c63;
+}
+
+.drag {
+  box-shadow: 0 0 20px black;
+}
+.todo_list {
+  background: cadetblue;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.input_edit {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.todo_icon_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.todo_text {
+  font-size: 20px;
+  font-weight: 600;
+}
+.todo_icon {
+  font-size: 30px;
+  padding: 1px 5px;
+  cursor: pointer;
+}
+.edit {
+  color: rgb(5, 14, 108);
+}
+.delete {
+  color: red;
+}
+.done {
+  color: green;
+  font-weight: 700;
+}
