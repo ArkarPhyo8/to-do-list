@@ -1,3 +1,4 @@
+/* InputField*/
 .input {
   width: 90%;
   display: flex;
@@ -35,6 +36,8 @@
   box-shadow: 0 0 5px black;
   transform: scale(0.8);
 }
+
+/* To Do List */
 .todo_list_container {
   padding: 20px 0;
   width: 90%;
@@ -43,79 +46,100 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .todoActive {
   width: 50%;
   padding: 20px;
   border-radius: 5px;
-  background-color: #2f74c0;
+  background-color: #359eef;
   text-align: center;
 }
+
 .todoActiveText {
+  font-weight: 700;
   font-size: 30px;
 }
 
 .dragActive {
-  background-color: #073a6f;
+  background-color: #2f74c0;
 }
 
 .todoComplete {
   width: 50%;
   padding: 20px;
   border-radius: 5px;
-  background-color: aqua;
+  background-color: #158b06;
   text-align: center;
 }
+
 .todoCompleteText {
+  font-weight: 700;
   font-size: 30px;
 }
 
 .dragRemove {
-  background-color: #0f6c63;
+  background-color: #154f11;
+}
+
+/* SingleTodo */
+.todo_list {
+  background: rgb(22, 84, 86);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-top: 30px;
 }
 
 .drag {
   box-shadow: 0 0 20px black;
 }
-.todo_list {
-  background: cadetblue;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 30px;
-  border-radius: 10px;
-}
 
 .input_edit {
-  padding: 10px 20px;
+  width: 60%;
+  padding: 5px 0px;
   font-size: 20px;
-  border: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   outline: none;
+  border-bottom: 2px solid rgb(5, 14, 108);
+  background-color: rgb(22, 84, 86);
+  color: #fff;
+}
+
+.edit {
+  color: rgb(5, 14, 108);
+}
+
+.todo_text {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: start;
+  color: #b8b5b5;
 }
 
 .todo_icon_container {
+  width: 40%;
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: center;
 }
 
-.todo_text {
-  font-size: 20px;
-  font-weight: 600;
-}
 .todo_icon {
   font-size: 30px;
   padding: 1px 5px;
   cursor: pointer;
 }
-.edit {
-  color: rgb(5, 14, 108);
-}
+
 .delete {
   color: red;
 }
+
 .done {
   color: green;
-  font-weight: 700;
 }
